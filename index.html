@@ -26,7 +26,7 @@
 
     <!-- home section start -->
     <section class="home" id="home">
-        <div class="max-width">
+        <div class="max-width" style="display: flex;">
             <div class="home-content">
                 <div class="text-1"></div>
                 <div class="text-2">Muhammad Naved</div>
@@ -35,12 +35,15 @@
                 <br>
                 <a href="MOHD_NAVED[Exp- 1 year].pdf" download class="hire about-img">Hire Me</a>
                 <div class="icons">
-                    <a href="https://www.linkedin.com/in/muhammad-naved-44106924a/"><i class="bi bi-linkedin"></i></a>
-                    <a href="https://www.instagram.com/mohd_naved01/"><i class="bi bi-instagram"></i></a>
-                    <a href="https://www.facebook.com/naved.distress/"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/muhammad-naved-44106924a/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://www.instagram.com/mohd_naved01/" target="_blank"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.facebook.com/naved.distress/" target="_blank"><i class="bi bi-facebook"></i></a>
                     <a href="https://www.github.com/mohdnaved786
-                    "><i class="bi bi-github"></i></a>
+                    " target="_blank"><i class="bi bi-github"></i></a>
                 </div>
+            </div>
+            <div>
+            <img src="images/IMG_6885-removebg-preview.png" alt="">
             </div>
         </div>
     </section>
@@ -106,49 +109,29 @@
             <div class="skills-content">
                 <div class="column left">
                     <div class="text">My creative skills & experiences.</div>
-                    <p>As I continue to grow and evolve in the field, I am eager to bring my skills and passion for
-                        development to new challenges and opportunities.</p>
+                    <p>"As I continue to grow and evolve in the field, I am eager to bring my skills and passion for
+                        development to new challenges and opportunities".</p>
                     <a href="#" class="about-img">Read more</a>
                 </div>
                 <div class="column right">
-                    <ol>
-                        <div>
-                            <li>Javascript</li>
-                        </div>
-                        <div>
-                            <li>Typescript</li>
-                        </div>
-                        <div>
-                            <li>Angular</li>
-                        </div>
-                        <div>
-                            <li>React js</li>
-                        </div>
-                        <div>
-                            <li>Next js</li>
-                        </div>
-                        <div>
-                            <li>Api INTEGRATION</li>
-                        </div>
-                        <div>
-                            <li>Json</li>
-                        </div>
-                        <div>
-                            <li>Github</li>
-                        </div>
-                        <div>
-                            <li>Material ui</li>
-                        </div>
-                        <div>
-                            <li>Angular Material</li>
-                        </div>
-                        <div>
-                            <li>Tailwind css</li>
-                        </div>
-                        <div>
-                            <li>html , css & bootstrap</li>
-                        </div>
-                    </ol>
+                   <div style="display: flex; gap: 2em;">
+                    <div class="flex">
+                        <h3>Javascript</h3>
+                        <h3>Typescript</h3>
+                        <h3>Angular</h3>
+                        <h3>React js</h3>
+                        <h3>Next js</h3>
+                        <h3>API INTEGRATION</h3>
+                    </div>
+                    <div class="flex">
+                        <h3>Json</h3>
+                        <h3>Github</h3>
+                        <h3>Material ui</h3>
+                        <h3>Angular Material</h3>
+                        <h3>Tailwind css</h3>
+                        <h3>html , css & bootstrap</h3>
+                    </div>
+                   </div>
                 </div>
             </div>
         </div>
@@ -162,48 +145,55 @@
                 <div class="column left">
                     <div class="text">Get in Touch</div>
                     <p></p>
-                    <div class="icons">
+                    <div class="">
                         <div class="row">
                             <div class="info">
-                                <div class="head">Name</div>
-                                <div class="sub-title">Pulkit Singh</div>
+                                <div class="head">Name :</div>
+                                <div class="sub-title">Muhammad Naved</div>
                             </div>
                         </div>
                         <div class="row">
                             <i class="fas fa-map-marker-alt"></i>
                             <div class="info">
-                                <div class="head">Address</div>
-                                <div class="sub-title">Navi Mumbai, Maharashtra, India</div>
+                                <div class="head">Address :</div>
+                                <div class="sub-title">Greater Noida Sector 4 Gaur city</div>
                             </div>
                         </div>
                         <div class="row">
                             <i class="fas fa-envelope"></i>
                             <div class="info">
-                                <div class="head">Email</div>
-                                <div class="sub-title">singh.pulkit.0076@gmail.com</div>
+                                <div class="head">Email :</div>
+                                <div class="sub-title">muhammadnaved3496@gmail.com</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-envelope"></i>
+                            <div class="info">
+                                <div class="head">Mobile :</div>
+                                <div class="sub-title">9105153496</div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="column right">
                     <div class="text">Message me</div>
-                    <form action="https://formspree.io/f/mqkgooqj" method="POST">
+                    <form onsubmit="emailSend(); reset(); return false;" method="POST">
                         <div class="fields">
                             <div class="field name">
-                                <input type="text" placeholder="Name" name="Name" required>
+                                <input type="text" placeholder="Name" name="Name" id="name">
                             </div>
                             <div class="field email">
-                                <input type="email" placeholder="Email" name="email_id" required>
+                                <input type="email" placeholder="Email" id="email" name="email_id">
                             </div>
                         </div>
                         <div class="field">
-                            <input type="text" placeholder="Subject" name="subject" required>
+                            <input type="text" placeholder="Subject" id="subject" name="subject">
                         </div>
                         <div class="field textarea">
-                            <textarea cols="50" rows="20" placeholder="Message..." name="message" required></textarea>
+                            <textarea cols="50" rows="20" placeholder="Message..." id="message" name="message"></textarea>
                         </div>
                         <div class="button">
-                            <button type="submit">Send message</button>
+                            <button type="submit" value="Send Message">Send message</button>
                         </div>
                     </form>
                 </div>
@@ -212,7 +202,7 @@
     </section>
 
    <div class="wtsp-icon">
-    <a href="https://api.whatsapp.com/send?phone=919105153496&text=Hi"><i class="bi bi-whatsapp"></i></a>
+    <a href="https://api.whatsapp.com/send?phone=919105153496&text=Hi" target="_blank"><i class="bi bi-whatsapp"></i></a>
    </div>
 
     <!-- footer section start -->
@@ -222,6 +212,10 @@
                 href="#">Privacy
                 Policy</a></span>
     </footer>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<script src="https://smtpjs.com/v3/smtp.js">
+	</script>
+    <script src="mail.js"></script>
 </body>
 
 </html>
