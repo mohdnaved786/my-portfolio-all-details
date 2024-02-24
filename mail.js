@@ -11,7 +11,7 @@ function emailSend() {
 		Host: "smtp.elasticemail.com",
 		Username: "muhammadnaved3496@gmail.com",
 		Password: "B3F6A5A0C3542405E76EE223987A9E511D7D",
-		To: email,
+		To: "muhammadnaved3496@gmail.com",
 		From: "muhammadnaved3496@gmail.com",
 		Subject: "New User Enquiry",
 		message: message,
