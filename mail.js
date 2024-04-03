@@ -2,6 +2,7 @@ function emailSend() {
 
 	const userName = document.getElementById('name').value;
 	const email = document.getElementById('email').value;
+	const mobile = document.getElementById('mobile').value;
 	const subject = document.getElementById('subject').value;
 	const message = document.getElementById('message').value
 
@@ -64,6 +65,7 @@ function emailSend() {
 					<p>Hello <span> ${userName} </span>,</p>
 					<p><strong>Full Name:</strong> ${userName}</p>
 					<p><strong>Email:</strong> ${email}</p>
+					<p><strong>Mobile:</strong> ${mobile}</p>
                     <p><strong>Subject:</strong> ${subject}</p>
 					<p><strong>Message:</strong> ${message} </p>
 					<p>If you have any questions, please <a href="info@awwaltech.com">contact us</a>.</p>
